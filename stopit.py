@@ -115,7 +115,7 @@ def get_markdown_column_data(keymap_data):
             markdown_data[context_name]["commands"].append(readable_command)
             markdown_data[context_name]["targets"].append(readable_target)
 
-            # Special case for shortcuts that end in backticks
+          
             # Unfortunately, these will render with an extra trailing space on GitHub.com
             if readable_shortcut.endswith("`"):
                 markdown_data[context_name]["shortcuts"].append(
