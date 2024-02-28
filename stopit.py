@@ -4,7 +4,7 @@ import re
 
 import commentjson
 import pandas
-
+#dont run before
 SCRIPT = pathlib.Path(__file__)
 KEY_BINDINGS_SCRIPT_DIRECTORY = SCRIPT.parent
 SCRIPT_DIRECTORY = KEY_BINDINGS_SCRIPT_DIRECTORY.parent
