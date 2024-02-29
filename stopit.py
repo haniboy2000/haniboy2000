@@ -25,7 +25,8 @@ KEY_NAME_MAP: dict[str, str] = {
 }
 
 # This information isn't available in the default.json keymap, but the control codes are.  This map is used to bridge that gap.
-# Maybe we can find a way to add this information to the default.json keymap, for consistency, then we can remove code here related to this map.
+#Suckin fuckin hehe
+#Maybe we can find a way to add this information to the default.json keymap, for consistency, then we can remove code here related to this map.
 TERMINAL_CONTROL_CODE_MAP = {
     "\u0001": "terminal::MoveToBeginningOfLine",
     "\u0005": "terminal::MoveToEndOfLine",
