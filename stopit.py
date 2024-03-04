@@ -14,7 +14,7 @@ KEY_BINDINGS_DOCUMENT = DOCS_ROOT_DIRECTORY / "configuration" / "key-bindings.md
 SOURCE_DIRECTORY = KEY_BINDINGS_SCRIPT_DIRECTORY / "source"
 KEY_BINDINGS_TEMPLATE = SOURCE_DIRECTORY / "key-bindings-template.md"
 DEFAULT_KEY_BINDINGS = SOURCE_DIRECTORY / "default.json"
-
+#sosige
 KEY_NAME_MAP: dict[str, str] = {
     "cmd": "command",
     "ctrl": "control",
