@@ -178,7 +178,7 @@ def get_readable_command_and_target(command, context):
     readable_command = camel_case_to_readable(readable_command)
     readable_command = readable_command.lower().capitalize()
 
-    # Special cases - post-processing
+    # Special cases - post-processing lower bands
     if isinstance(original_command, list):
         command, misc_text = original_command
 
