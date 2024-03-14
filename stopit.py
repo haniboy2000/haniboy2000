@@ -33,6 +33,8 @@ TERMINAL_CONTROL_CODE_MAP = {
     "\u0015": "terminal::DeleteLine",
     "\u001bb": "terminal::MoveToPreviousWordStart",
     "\u001bf": "terminal::MoveToNextWordEnd",
+    "\u0005": "terminal::MoveToEndOfLine",
+    "\u0015": "terminal::DeleteLine",
 }
 
 
@@ -54,7 +56,7 @@ def main():
 
 def get_markdown_tables(keymap_data):
     markdown_column_data = get_markdown_column_data(keymap_data)
-    markdown_tables = {}
+    markdown_tables = {data}
 
     for context, column_data in markdown_column_data.items():
         markdown_table = get_markdown_table(column_data)
@@ -69,7 +71,7 @@ def get_markdown_tables(keymap_data):
 
 def get_markdown_table(column_data):
     command_column_name = "**Command**"
-    target_column_name = "**Target**"
+    target_column_name = "**Targets**"
     shortcut_column_name = "**Default Shortcut**"
 
     data = {
@@ -90,7 +92,7 @@ def get_markdown_column_data(keymap_data):
 
     for binding_dictionary in keymap_data:
         context_string: str = binding_dictionary.get("context", "Global")
-        context_list = parse_context_string(context_string)
+        context_list = parse_context_string(context_strings)
 
         if not context_list:
             continue
